@@ -1,40 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-<link rel="stylesheet" href="css/style.css">
-
-<title>Gallery</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Gallery | IndiaTourism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-<nav class="navbar">
-
-<div class="logo">Explore India</div>
-
-</nav>
-
-<section class="gallery">
-
-<img src="images/tajmahal.jpg">
-
-<img src="images/goa.jpg">
-
-<img src="images/kerala.jpg">
-
-<img src="images/ladakh.jpg">
-
-</section>
-
-<footer>
-
-<p>© Explore India</p>
-
-</footer>
-
+    <header class="site-header"><a class="brand" href="index.html"><span
+                class="brand-mark">✦</span><span>India<span>Tourism</span></span></a><button class="menu-toggle"
+            aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="main-nav"><a href="index.html">Home</a><a href="services.html">Explore India</a><a
+                href="services.html">Journeys</a><a href="booking.html"></a>Trip Planner<a href="about.html">About</a></nav><a
+            class="nav-action" href="contact.html">Plan a trip <span>↗</span></a>
+    </header>
+    <main>
+        <section class="page-hero gallery-hero">
+            <p class="eyebrow light"><span></span> Visual stories</p>
+            <h1>India in every<br><em>shade.</em></h1>
+            <p>A collection of sacred rituals, mountain air, wild landscapes, craft, colour and coast.</p>
+        </section>
+        <section class="gallery-section standalone">
+            <div class="gallery-title">
+                <div>
+                    <p class="eyebrow warm"><span></span> Through our lens</p>
+                    <h2>See what<br><em>calls to you.</em></h2>
+                </div>
+                <p>Tap any image to pause, look closer and start dreaming of your next journey.</p>
+            </div>
+            <div class="gallery-grid expanded-gallery"><button class="gallery-item tall"
+                    data-caption="Prayer lamps drifting on the sacred Ganges"><img
+                        src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80"
+                        alt="Prayer lamps on the Ganges"><span>Spiritual India</span></button><button
+                    class="gallery-item" data-caption="The detailed geometry of Rajasthan's royal architecture"><img
+                        src="https://images.unsplash.com/photo-1599661046827-dacde697654c?auto=format&fit=crop&w=900&q=80"
+                        alt="Ornate palace architecture"><span>Living heritage</span></button><button
+                    class="gallery-item" data-caption="Threads, texture and colour in India's artisan traditions"><img
+                        src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=900&q=80"
+                        alt="Colourful Indian textiles"><span>Artisan stories</span></button><button
+                    class="gallery-item" data-caption="Wild India, waiting to be discovered"><img
+                        src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=900&q=80"
+                        alt="Elephant in the forest"><span>Into the wild</span></button><button class="gallery-item"
+                    data-caption="Misty tea gardens in the hills of Kerala"><img
+                        src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=900&q=80"
+                        alt="Lush tea plantation"><span>Tea country</span></button><button class="gallery-item"
+                    data-caption="A quiet coastal morning in Goa"><img
+                        src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=900&q=80"
+                        alt="Palm trees by a tropical beach"><span>Coastal calm</span></button><button
+                    class="gallery-item" data-caption="The enduring stone artistry of Hampi"><img
+                        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                        alt="Indian heritage monument"><span>Ancient wonder</span></button><button class="gallery-item"
+                    data-caption="Himalayan light over high-altitude valleys"><img
+                        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80"
+                        alt="Snow-capped mountains"><span>High Himalaya</span></button><button class="gallery-item"
+                    data-caption="The colours and patterns of an Indian festival"><img
+                        src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=900&q=80"
+                        alt="Colourful Indian temple"><span>Festival colour</span></button></div>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span
+                class="brand-mark">✦</span><span>India<span>Tourism</span></span></a>
+        <p>Made for the curious traveller.</p>
+        <div><a href="services.html">Journeys</a><a href="contact.html">Contact</a><a href="about.html">About</a></div>
+        <small>© 2026 IndiaTourism. Discover responsibly.</small>
+    </footer>
+    <dialog class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Close image">×</button><img
+            id="lightbox-image" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </dialog>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
